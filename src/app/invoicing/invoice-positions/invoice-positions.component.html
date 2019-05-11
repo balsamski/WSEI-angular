@@ -1,0 +1,26 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Item name</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Unit</th>
+        <th scope="col">netto</th>
+        <th scope="col">tax</th>
+        <th scope="col">gross</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <app-single-position
+        *ngFor="let position of positions; let index = index"
+        [position]=position
+      ></app-single-position>
+    </tbody>
+  </table>
+  <div class="invoice-positions__actions">
+    <button (click)="addPosition()" type="button" class="btn btn-primary invoice-positions__action">
+      add position
+      <i class="fa fa-plus"></i>
+    </button>
+  </div>

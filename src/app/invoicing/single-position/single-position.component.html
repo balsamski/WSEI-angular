@@ -1,0 +1,40 @@
+<th scope="row">
+  {{lp}}
+</th>
+<td>
+  <input class="form-control" type="text" name="name" [value]=position.name />
+</td>
+<td>
+  <input class="form-control" type="number" name="quantity" [value]=position.quantity />
+</td>
+<td>
+  <select class="form-control" name="unit" [value]=position.unit>
+    <option *ngFor="let u of availableUnits" [value]=u>{{u}}</option>
+  </select>
+</td>
+<td>
+  <div class="input-group">
+    <input type="text" class="form-control" name="netto" [value]=position.netto />
+    <div class="input-group-append">
+      <span class="input-group-text">PLN</span>
+    </div>
+  </div>
+  
+</td>
+<td>
+    <select class="form-control" name="tax" [value]=position.tax>
+        <option *ngFor="let t of availableTaxes" [value]=t>{{t}}</option>
+    </select>
+</td>
+<td>
+  <div class="input-group">
+    <input type="text" class="form-control" name="brutton" [value]=position.brutto />
+    <div class="input-group-append">
+      <span class="input-group-text">PLN</span>
+    </div>
+  </div>
+<td>
+  <button>
+    <i class="fa fa-trash"></i>
+  </button>
+</td>
