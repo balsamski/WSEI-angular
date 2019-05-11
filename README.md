@@ -10,8 +10,7 @@ Projekt referencyjny w ramach przedmiotu ``Projektowanie Aplikacji Webowych`` Wy
 ![hero](docs/2-invoicing.svg "invoicing module")
 
 
-# tagi
-* ex1 - inicjalizacja projektu
-* ex2 - routing hero / invoicing
-* ex3 - lista pozycji
-* ex4 - wyliczanie wartości pozycji
+# branch
+* ex1 - utworzenie formularza, dynamiczna lista pozycji
+* ex2 - routing hero / komunikacja dwustrona z komponentem
+* ex3 - Komunikacja z API 
